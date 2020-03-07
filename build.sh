@@ -1,2 +1,2 @@
-bazel build --copt="-fno-pie" --linkopt="-fno-pie" hello_world
-
+bazel build  --linkopt="-no-pie" --linkopt="-static" --features="-pic" hello_world
+exit 0
